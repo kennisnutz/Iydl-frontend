@@ -1,0 +1,576 @@
+.poolInfo{
+   display: flex;
+
+   .poolInfoContainer{
+      flex: 6;
+
+      .topSection{
+         display: flex;
+         width: 70%;
+         justify-content: space-around;
+         align-items: center;
+         margin-top: 20px;
+
+         .redirect{
+
+            h1{
+               font-size: 32px;
+               font-weight: bold;
+               color: gray;
+
+               &:hover{
+                  cursor: pointer;
+                  color:  rgba(107, 102, 34, 0.315);;
+               }
+            }
+
+         }
+
+         .subtitle{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+
+            .logo{
+               width: 30px;
+               height: 30px;
+            }
+
+            
+            .main{
+               font-size: 36px;
+               font-weight: bold;
+               color: gray;
+               }
+            .sub{
+               font-size: 25px;
+               font-weight: bold;
+               color: gray;
+               }
+         
+         }
+      }
+
+      .infoSection{
+         background-color: rgba(23,140,248,.08);
+         max-width: 815px;
+         min-width: 450px;
+         height: 150px;
+         border-radius: 20px;
+         margin: auto;
+         margin-top: 60px;
+         display: flex;
+         flex-direction: column;
+         position: relative;
+         padding: 20px;
+
+
+         .intro{
+            display: flex;
+            position: absolute;
+            top: -20px;   
+            justify-content: space-between;             
+            width: 80%;       
+            margin-left: 20px;
+           
+
+            .symbols{
+               display: flex;
+
+               span{
+                  font-weight: 800;
+                  font-size: 33px;
+                  margin: 7px;
+   
+                  &.rew{
+                     color: rgba(190, 18, 162, 0.555);
+   
+                  }
+                  &.seperator{
+                      color: gray;
+                  }
+                  &.stake{
+                     color: rgba(190, 18, 162, 0.555);
+                  }
+               }
+            }
+
+            .poolType{
+               span{
+                  font-weight: 800;
+                  font-size: 33px;
+                  margin: 7px;
+                  color: rgba(190, 18, 162, 0.555);
+               }
+            }
+         }
+
+         .details{
+            margin-top: 25px;
+            display: flex;
+            flex-direction: column;
+
+            .title{
+               font-weight: 500;
+               font-size: 22px;
+               color: rgba(190, 0, 162, 0.555);
+            }
+
+            .detailsContainer{
+               display: flex;
+               gap: 10px;
+               justify-content: space-between;
+               align-items: center;
+               margin-top: 10px;
+               color: rgba(20, 16, 16, 0.555);
+
+               .poolStats{
+                  display: flex;
+                  margin-left: 20px;
+                  
+                  .amountStaked{
+                     border-right: 1px solid rgba(26, 4, 68, 0.382);
+                     align-items: center;
+                     justify-content: space-around;
+                     padding-right: 15px;
+                  }
+                  .remaining{
+                     border-right: 1px solid rgba(26, 4, 68, 0.382);
+                     margin-left: 15px;
+                     align-items: center;
+                     justify-content: space-around;
+                     padding-right: 15px;
+                  }
+                  .roi{
+                     margin-left: 15px;
+                     align-items: center;
+                     justify-content: space-around;
+                     padding-right: 15px;
+                  }
+               }
+
+            }
+         }
+      }
+
+      .activitiesContainer{
+         display: flex;
+         flex-direction: column;         
+         justify-content: space-around;
+         align-items: center;
+         width: 80%;
+         margin: 40px auto;
+         
+        
+         .title{
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            align-items: center;
+            margin:40px auto;
+
+            span{
+               font-size: 25px;
+               font-weight: 500;
+               color: blueviolet;
+               border-bottom: 3px solid blueviolet;
+               padding:5px 10px;
+               border-radius: 5px;
+
+               &.active{
+                  background-color: #808191;
+                  color: whitesmoke;
+               }
+            }
+         }
+
+         .invest{
+            display: flex;
+            justify-content: space-between;            
+            padding: 20px;
+            gap: 20px;
+            
+            .left,.right{
+               border: 0.3px solid gray;
+               border-radius: 10px;
+               padding: 15px;
+               width: 450px;
+               
+            }
+            .left{
+               
+
+               h2{
+
+               }
+               .info{
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  gap: 20px;
+                  margin-top: 30px;
+                
+                  
+                  .balance, .vesting{
+                     display: flex;
+                     flex-direction: column;
+                     justify-content: space-around;
+                     align-items: center;
+                     margin: 5px auto;
+                     color: gray;
+                     font-weight: 300
+                  }
+               }
+               .inputContainer{
+                  display: flex;
+                  flex-wrap: wrap;
+                  gap: 10px;
+                  align-items: center;
+                  margin-top: 30px;
+                  
+
+                  .inputBox{
+                     display: flex;
+                     border: 0.3px solid gray;
+                     border-radius: 5px;
+                     padding: 5px;
+                     align-items: center;
+                     justify-content: space-between;
+                     width: 80%;
+
+                     input{
+                        border: none;
+                        outline: none;
+                        width: 60%;
+                       
+
+                        &::placeholder{
+                           font-size: 20px;
+                           font-weight: 400;
+                           color: gray;
+                          
+                        }
+                     }
+
+                     span{
+                        margin: 5px;
+                        color:gray ;
+                        font-size: 20px;
+                        font-weight: 400;
+                     }
+                     button{
+                        border-radius: 5px;
+                        background-color: rgba(190, 0, 162, 0.555);
+                        color: rgb(17, 2, 31);
+                        border: 0.2px solid gray;
+                        font-size: 20px;
+                        font-weight: 400;
+                        
+                     }
+                  }
+               }
+
+               .buttonContainer{
+                  display: flex;
+                  margin-top: 30px;
+                  gap: 5px;
+                  justify-content: flex-end;
+
+                  button{
+                     border-radius: 5px;
+                     background-color: rgba(230, 141, 216, 0.39);
+                     color: rgb(17, 2, 31);
+                     border: 0.2px solid rgba(41, 35, 35, 0.068);
+                     font-size: 20px;
+                     font-weight: 400;
+                  }
+               }
+            }
+            .right{
+              
+               
+
+               .info{
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  gap: 20px;
+                  margin-top: 30px;
+
+                  .staked, .rewards{
+                     display: flex;
+                     flex-direction: column;
+                     justify-content: space-around;
+                     align-items: center;
+                     margin: 5px auto;
+                     color: gray;
+                     font-weight: 300;
+                  }
+                  
+               }
+
+               .details{
+                  display: flex;
+                  justify-content: space-around;
+                  gap: 5px;
+
+                  .line{
+                     border-right: 0.3px solid rgb(206, 195, 195);
+                     height: 30px;
+                     margin: 25px 0;
+                     align-items: center;
+                  }
+                  
+                  
+                  .detailsItem{                     
+                     margin: 20px 10px;
+                     
+
+                     span{
+                        font-size: 12px;
+                        justify-content: space-around;
+                        align-items: center;  
+                        display: flex;
+                        font-weight: 300;
+                        color: gray;                 
+                        
+                     }
+                    
+                  }
+
+                  
+
+
+               }
+
+               .buttonsContainer{
+                  justify-content: space-around;
+                  align-items: center;
+                  display: flex;
+                  margin-top: 20px;
+
+                  button{
+                     border-radius: 5px;
+                     font-size: 18px;
+                     font-weight: 300;
+                     color: gray;
+                     border-color: white;
+                  }
+               }
+            }
+            
+
+         }
+         .stats{
+            display: flex;
+            flex-direction: column;
+            // justify-content: center;
+            // // align-items: center;
+
+            .topSection{
+               display: gird;
+               grid-template-columns: repeat(3);
+               gap: 10px;
+               justify-content: space-between;
+               align-items: center;
+
+               hr{
+                  border: 2px solid gray;
+                  width: 100%;
+                  height: 0;
+               }
+
+
+               .overview, .rewards, .schedule{
+                  max-width: 450px;
+                  min-width: 350px;
+                  min-height: 450px;
+                  max-height: 500px;
+                  border: 0.2px solid gray;
+                  border-radius: 10px;                
+                  display: flex;
+                  flex-direction: column;
+                  padding: 10px;                 
+                  
+
+                  h2{
+                     font-size: 20px;                    
+                     font-weight: 600;
+                     color: rgba(17, 2, 31, 0.486);
+                     margin-top:20px;
+                     margin-bottom: 20px;
+                     
+                  }
+
+
+               }
+               .overview{
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  
+
+                  .staked{
+                     display: flex;
+                     align-items: center;
+                     flex-direction: column;
+                     justify-content: space-between;
+                     align-items: center;
+                     margin: 20px;
+                     
+
+
+                     span{
+                        display: flex;
+                        font-size: 20px;
+                        font-weight: 500;
+                        color: blue;
+                        justify-content: space-around;
+                        align-items: center;
+                        
+                     }
+                  }
+                  .detail{
+                     display: flex;
+                     gap: 10px;                     
+                     padding: 20px; 
+                                    
+
+                     .line{
+                     border-right: 0.3px solid rgb(112, 73, 73);
+                     margin: 5px 10px;
+                     height: 15px;                    
+                     
+                     }
+
+                     span{
+                        display: flex;
+                        font-size: 20px;
+                        font-weight: 500;
+                        color: blue;
+                        justify-content: space-around;
+                        align-items: center;
+                        
+                     }
+                  }
+
+               }
+
+               .rewards{
+                  align-items: center;
+                  .info{
+                     display: flex;
+                     flex-direction: column;
+
+                     .apr{
+                        margin: 30px auto;
+
+
+                        span{
+                           display: flex;
+                           font-size: 20px;
+                           font-weight: 500;
+                           color: blue;
+                           justify-content: space-around;
+                           align-items: center;
+                           
+                        }
+                     }
+                     .funded{
+                        margin-bottom: 20px;
+
+                        span{
+                           display: flex;
+                           font-size: 20px;
+                           font-weight: 500;
+                           color: blue;
+                           justify-content: space-around;
+                           align-items: center;
+                           
+                        }
+                     }
+
+                     .remainder{
+                        display: flex;
+                        gap: 10px;
+
+                        span{
+                           display: flex;
+                           font-size: 20px;
+                           font-weight: 500;
+                           color: blue;
+                           justify-content: space-around;
+                           align-items: center;
+                        }
+
+                        .line{
+                           border-right: 0.3px solid rgb(112, 73, 73);
+                           margin: 5px 10px;
+                           height: 45px; 
+                           transform: rotate(30deg);                   
+                           
+                           }
+                     }
+                  }
+
+               }
+               .schedule{
+                  
+                  
+                  .remainingTime{
+                     margin: 30px;
+                     display: flex;
+                     flex-direction: column;
+                     gap: 10px;
+                     justify-content: space-around;
+                     align-items: center;
+
+
+                        span{
+                           display: flex;
+                           font-size: 20px;
+                           font-weight: 500;
+                           color: blue;
+                           justify-content: space-around;
+                           align-items: center;
+                        }
+
+
+                  }
+                  .fundingSchedule{
+                     overflow-y: scroll;
+                    
+                     
+                     .timelineItem{
+                        align-items: center;
+                        justify-content: space-between;
+                        display: flex;
+                        flex-direction: column;
+                        border-radius: 7px;
+                        width: 100%;
+                        background-color: rgba(107, 102, 34, 0.315);
+                        padding: 5px;
+                        
+
+                        span{
+                           display: flex;
+                           font-size: 12px;
+                           font-weight: 500;
+                           color: rgba(27, 27, 192, 0.493);
+                           justify-content: space-around;
+                           align-items: center;
+                        }
+
+                     }
+                  }
+               }
+            }
+
+         }
+         .activity{
+            width: 80%;
+         }
+      }
+   }
+}

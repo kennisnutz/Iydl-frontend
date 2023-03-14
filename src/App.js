@@ -1,24 +1,27 @@
 import logo from './logo.svg';
-import './App.css';
+import Home from './pages/home/Home';
+import Dashboard from './pages/dashboard/Dashboard';
+import Discover from './pages/discover/Discover';
+import Distribute from './pages/distribute/Distribute';
+import Profile from './pages/profile/Profile';
+import PoolInfo from './pages/poolInfo/PoolInfo';
+
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="discover">
+          <Route index element={<Discover />} />
+          <Route path=":pool_id" element={<PoolInfo />} />
+        </Route>
+        <Route path="/distribute" element={<Distribute />} />
+        <Route path="/profile" element={<Profile />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

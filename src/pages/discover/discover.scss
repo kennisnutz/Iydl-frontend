@@ -1,0 +1,26 @@
+.discover{
+   display: flex;
+   width: 100%;
+
+   .discoverContainer{
+      flex: 6;
+
+
+      .hero{
+         display: flex;
+         justify-content:center;
+         align-items: center;
+        
+         border-bottom: 0.5px solid gray;     
+        
+       
+
+
+         h1{
+            color: gray;
+            justify-content: space-evenly;
+            margin-bottom: 20px;
+         }
+      }
+   }
+}

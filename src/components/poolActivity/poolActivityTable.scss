@@ -1,0 +1,14 @@
+.table{
+  width: 100%;
+
+
+  
+   .tableRow{
+      &:hover{
+         cursor: pointer;
+         background-color: rgba(95, 158, 160, 0.24);
+      }
+   }
+ 
+
+}

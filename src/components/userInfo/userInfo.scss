@@ -1,0 +1,68 @@
+.userInfo{
+   position: relative;
+   top: 80px;
+   display: flex;
+   
+  
+
+   .userInfoContainer{
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      .connectBtn{
+         display: block;
+        margin-left:50px;   
+         
+         button{
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            border-radius: 5px;
+            font-size: 20px;
+            padding: 5px;
+         
+         }
+        
+      }
+
+      .networkSelect{
+         display: flex;
+         flex-direction: column;
+         gap: 10px;
+         justify-content: space-around;
+         align-items: start;
+         margin-left: 30px;
+         
+         select{
+            width: 150px;
+            height: 30px;
+            padding: 5px;
+            border-color: gray;
+            outline: none;
+            border-radius: 5px;
+           
+         }
+      }
+
+      .walletAddress, .accountBalance,{
+         display: flex;
+         flex-direction: column;
+         justify-content: flex-start;
+         align-items: start;
+         margin-left: 30px;
+         gap: 5px;
+
+         span{
+            &.title{
+               font-size: 16px;
+               font-weight: 400;
+               color: blue;
+            }
+            &.value{
+               font-weight: bold;
+            }
+         }
+      }
+   }
+}
