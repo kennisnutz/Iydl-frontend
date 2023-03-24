@@ -1,0 +1,258 @@
+.page1{
+   width: 100vh;
+   display: flex;
+   flex-direction: column;  
+   justify-content: space-around;
+   align-items: center;
+   gap: 10px;
+   margin: 20px;
+
+
+   .stakeTokenBox,  .rewardTokenBox{      
+      border: 1px solid gray;
+      width: 80%;
+      padding: 10px;
+      border-radius: 5px;
+      object-fit: cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flext-start;
+      margin: 10px auto ;
+
+      .title{
+         display: flex;
+         flex-direction: column;
+      }
+
+   }
+
+ 
+}
+
+.page2{
+   width: 100vh;
+   display: flex;
+   flex-direction: column;   
+   justify-content: space-around;   
+   gap: 10px;
+   margin: 20px;
+
+   .header{
+      margin: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+      h3{
+         font-size: 30px;
+         font-weight: 600;
+         color: rgba(26, 102, 202, 0.473);
+      }
+      p{
+         font-size: 20px;
+         font-weight: 300;
+         color: rgba(126, 102, 202, 0.473)
+      }
+   }
+   .bar{
+      display: flex;
+      gap: 15px;
+      justify-content: flex-start;
+      align-items: flex-start;
+
+
+      span{
+         font-size: 20px;
+         font-weight: 600;
+         color: rgba(26, 102, 202, 0.473);
+         
+      }
+
+   }
+
+   .durationBox{
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      justify-content: space-around;
+
+      .durationItem{
+         display: flex;
+         justify-content: flex-start;
+         align-items: flex-start;
+         gap: 20px;
+         margin-top: 20px;
+         .label{
+            font-size: 25px;
+            font-weight: 600;
+            color: rgba(26, 102, 202, 0.473)
+         }
+         .inputBox{
+            display: flex;         
+            justify-content: space-between;
+            gap: 10px;
+            align-items: center;
+            border: 1px solid rgba(26, 102, 202, 0.473);
+            border-radius: 5px 0 0  5px;
+            
+            input{
+               outline: none;
+               text-decoration: none;
+               border: none;
+               width: 60px;
+               height: 30px;
+   
+            }
+   
+            span{
+               font-size: 20px;
+               font-weight: 500;
+               color: rgba(26, 102, 202, 0.473);
+   
+               &.days{
+               border-right: 1px solid rgba(26, 102, 202, 0.473);
+               padding: 5px;
+               margin-right: 0;
+              
+               }
+               
+            }
+         }
+      }
+      
+
+      p{
+         font-size: 20px;
+         font-weight: 300;
+         color: rgba(26, 102, 202, 0.473);
+         width: 80%;
+      }
+   }
+}
+
+
+.confirmation{
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   
+
+   .title{
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+
+
+      h3{
+         font-size: 25px;
+         font-weight: 600;
+         color: rgba(26, 102, 202, 0.473);        
+      }
+
+      p{
+         font-size: 16px;
+         font-weight: 400;
+         color: rgba(206, 32, 32, 0.773); 
+         width: 70%; 
+      }
+   }
+
+   .type{
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 20px;
+
+      span{
+         font-size: 20px;
+         font-weight: 400;
+         color: rgba(26, 102, 202, 0.473);
+      }
+   }
+
+   .tokensInfo{
+      display: flex;
+      
+      gap: 10px;     
+      width: 100%;      
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+      
+      .tokensInfoItem{
+         display: flex;
+         flex-direction: column;
+         width: 70%;
+         justify-content: space-between;
+         align-items: center;
+         
+         h4{
+            font-size: 25px;
+            font-weight: 600;
+            color: rgba(2, 22, 49, 0.473)
+         }
+         span{
+            font-size: 18px;
+            font-weight: 400;
+            color: rgba(26, 102, 202, 0.473); 
+         }
+      }
+   }
+
+   .vesting{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      h4{
+         font-size: 30px;
+         font-weight: 600;
+         color:rgba(126, 32, 209, 0.473)
+      }
+
+      .vestingInfo{
+         display: flex;
+         flex-direction: column;
+         gap: 20px;
+         padding: 10px;
+         width: 300px;         
+
+         .start{
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            span{
+               font-size: 20px;
+               color:rgba(26, 22, 49, 0.473)
+            }
+         }
+         .arrow{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1px;
+
+            span{
+               font-size: 20px;
+               color:rgba(26, 22, 49, 0.473)
+
+               
+            }
+            .arrowHead {
+               border: solid rgba(26, 22, 49, 0.473);
+               border-width: 0 3px 3px 0;
+               display: inline-block;
+               padding: 3px;
+             }
+             
+             .right {
+               transform: rotate(-45deg);
+               -webkit-transform: rotate(-45deg);
+             }
+         }
+      }
+   }
+}

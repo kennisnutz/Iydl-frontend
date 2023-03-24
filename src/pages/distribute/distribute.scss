@@ -1,0 +1,234 @@
+.distribute{
+   display: flex;
+   
+
+   .distributeContainer{
+      flex:6;
+      
+
+      .topSection{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         gap: 10px;
+         margin-top: 30px;
+         padding: 20px;
+
+
+         img{
+            width: 40px;
+            height: 40px;
+         }
+
+         span{
+            display: flex;
+            font-size: 30px;
+            font-weight: 800;
+            color: rgba(26, 102, 202, 0.473);
+            
+
+            &.small{
+               font-size: 20px;
+               align-self: last baseline;
+               color: rgba(128, 128, 128, 0.514);
+            }
+         }
+      }
+   
+      .infoCards{
+         width: 80%;
+         margin: 30px;
+         display: flex;         
+         align-items: center;
+         gap: 20px;       
+
+         .totalStaked, .unclaimedRewards{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            padding: 40px;
+             background-color: rgba(202, 211, 223, 0.85);
+
+
+             span{
+               font-size: 18px;
+               font-weight: 300;
+               color: #178cfe;
+
+               &.data{
+                  font-size: 34px;
+               font-weight: bold;
+               color: #010a14;
+               }
+             }
+         }
+      }
+
+      .statsSection{
+         margin: 30px;
+
+         h2{
+            margin-bottom: 20px;
+         }
+      }
+
+      .button{
+         width: 80%;
+         display: flex;
+         justify-content: flex-end;
+       
+         align-items: center;
+         
+
+      }
+
+      .modal{
+         border: 1px solid gray;
+         border-radius: 20px;
+         justify-content:space-around;
+         align-items: center;         
+         display: flex;
+         flex-direction: column;         
+         background-color: rgb(248, 239, 239);         
+         width: 60%;                 
+         position: absolute;
+         top: 50%;         
+         left: 50%;
+         transform: translate(-50%, -50%);
+
+         .modalTop{
+            display: flex;
+            flex-direction: column;
+          
+
+
+            .titleSection{
+               display: flex;
+               width: 100vh;                 
+               justify-content: space-between; 
+               padding: 10px;       
+               
+               button{
+                  border-radius: 50%;
+                  border: none;
+                  color: blue;                  
+                  font-size: 22px;
+
+                  &:hover{
+                     border: 0.2px solid blueviolet;
+                     cursor: pointer;
+                  }
+               }
+               
+            }
+
+            .progressBar{
+
+            }
+         }
+
+         .radioButtons{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            flex: 2;         
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+
+            .customRadio{
+               
+               
+               input{
+                  display: none;
+               }
+
+               input:checked+.radioBtn{
+                  border: 3px solid #8373e6;
+               }
+
+               input:checked+.radioBtn>.icon{
+                  opacity: 1;
+                  transform: translateX(-59%) scale(1);
+               }
+
+               .radioBtn{
+                  margin: 10px;
+                  width: 400px;
+                  height: 180px;
+                  border: 2px solid transparent;
+                  display: inline-block;
+                  border-radius: 10px;
+                  position: relative;
+                  text-align: center;
+                  box-shadow: 0 0 20px #f0e4e467;
+
+                  &:hover{
+                     cursor: pointer;
+                     box-shadow: 0 0 20px #f8292967;
+                  }
+
+                  .icon{
+                     color: #ffffff;
+                     background-color: #8373e6;
+                     font-size: 20px;
+                     position: absolute;
+                     top: -15px;
+                     left: 50%;
+                     transform: translateX(-50%) scale(4);
+                     border-radius: 50%;
+                     padding: 3px;
+                     transition: 0.2s;
+                     pointer-events: none;
+                     opacity: 0;
+                  }
+               
+                  .poolInfo{
+                     margin: 10px auto;
+                     display: flex;
+                     flex-direction: column;
+                     width: 350px;
+                     height: 150px;
+                     position: absolute;
+                     top: 40%;
+                     left: 50%;
+                     transform: translate(-50%, -50%);
+                    
+
+                     .poolDescription{
+                        color: #0404059f;                        
+                        font-size: 18px;
+                     }
+
+                     h3{
+                        color: #8373e6;
+                        font-family: "Raleway", sans-serif;
+                        font-size: 16px;
+                        font-weight: 600;
+                        text-transform: uppercase;
+                     }
+                  }
+
+                 
+               }
+
+            }
+            
+         }
+
+         .navigation{
+            margin: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+         }
+
+
+
+        
+      }
+
+      
+   }
+}

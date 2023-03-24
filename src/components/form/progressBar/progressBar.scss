@@ -1,0 +1,48 @@
+.progressBar{
+   margin-top: 4px;
+   padding: 4px;
+   justify-content: space-between;
+   align-items: center;
+   display: flex;
+   margin: 16px;
+
+   .infoContainer{
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-weight: 600;
+     
+
+      .stage{
+         border-radius: 50%;
+         transition: all 0.5s ease-in-out;
+         border: 2px solid gray;
+         height: 12px;
+         width: 12px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         padding: 9px;
+      }
+
+      .description{
+         position: absolute;
+         top: 22px;
+         text-align: center;
+         margin-top: 16px;  
+         width: 132px;                 
+         text-transform: uppercase;
+         font-weight: 400;
+      }
+
+      
+   }
+   .connector{
+      display: flex;
+      border-top: 2px solid rgb(16, 16, 19);
+      transition: all 0.5s ease-in-out;
+      width: 100%;
+      
+   }
+}

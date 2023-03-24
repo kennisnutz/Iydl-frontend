@@ -5,6 +5,7 @@ import Discover from './pages/discover/Discover';
 import Distribute from './pages/distribute/Distribute';
 import Profile from './pages/profile/Profile';
 import PoolInfo from './pages/poolInfo/PoolInfo';
+// import './index.scss';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 

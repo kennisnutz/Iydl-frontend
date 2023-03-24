@@ -1,0 +1,33 @@
+.navigationContainer{
+   display: flex;
+   justify-content: space-between;
+   
+   width: 70%;
+   margin-top: 50px;
+   margin-bottom: 20px;
+   padding: 10px;
+   align-items: center;
+
+   .infolink{
+
+   }
+
+   .buttonContainer{
+      display: flex;
+      gap: 10px;
+      
+      button{
+         border-radius: 5px;
+         font-size: 18px;
+         padding: 5px;
+         font-weight: 800;
+         border-color: beige;
+         color: rgba($color: #b088f0, $alpha: 1.0);
+
+         &:hover{
+            box-shadow: 2px 2px 22px rgba($color: #91aaf0, $alpha: 1.0);
+         }
+
+      }
+   }
+}
